@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090d08">
+    <meta name="description" content="The makeup portfolio of Camilo Herrera: playful beauty, colorful editorial, and runway looks.">
+    <title>Camilo Herrera — Makeup Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <a class="wordmark" href="#top" aria-label="Camilo Herrera, home">CAMILO <span>HERRERA</span><i>✿ MAKEUP ARTIST ✿</i></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">
+            <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+            <a href="#work">Portfolio</a>
+            <a href="#about">About</a>
+            <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> your friendly neighborhood makeup artist</p>
+                <h1 id="hero-title">A little<br><em>makeup magic!</em></h1>
+                <p class="hero-description">A pocket-sized world of color, sparkles, and looks that feel like you. Come on in ♡</p>
+                <a class="text-link" href="#work">Peek at my work <span aria-hidden="true">↓</span></a>
+                <p class="hero-index">♡ <span>EST.</span> GOOD VIBES</p>
+            </div>
+            <div class="hero-image-wrap">
+                <img
+                    class="hero-image"
+                    src="image1.jpg"
+                    alt="Placeholder portrait of a little character on a bright green background"
+                    fetchpriority="high"
+                >
+                <span class="image-caption">hello, little friend! ♡</span>
+                <span class="hero-image-number" aria-hidden="true">✷</span>
+                <span class="hero-sticker" aria-hidden="true">kira<br>kira! ✦</span>
+            </div>
+            <a class="scroll-cue" href="#work" aria-label="Scroll to selected work"><span></span> SCROLL TO EXPLORE</a>
+        </section>
+
+        <section class="work section-wrap" id="work" aria-labelledby="work-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> made with love (and a little glitter)</p>
+                    <h2 id="work-title">Tiny looks,<br><em>big feelings!</em></h2>
+                </div>
+                <p class="section-note">A happy little gallery<br>of faces &amp; feelings ♡</p>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filter portfolio by category">
+                <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>06</span></button>
+                <button class="filter-button" type="button" data-filter="beauty" aria-pressed="false">Beauty <span>02</span></button>
+                <button class="filter-button" type="button" data-filter="editorial" aria-pressed="false">Editorial <span>02</span></button>
+                <button class="filter-button" type="button" data-filter="runway" aria-pressed="false">Runway <span>02</span></button>
+            </div>
+
+            <div class="project-grid">
+                <button class="project-card project-card-tall" type="button" data-category="beauty" data-title="Peachy day" data-category-label="Beauty" data-image="image2.jpg" aria-label="View Peachy day, beauty">
+                    <span class="project-image-wrap"><img src="image2.jpg" alt="Placeholder character image on a bright green background" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></span>
+                    <span class="project-info"><span class="project-title">Peachy day</span><span class="project-category">Beauty</span></span>
+                </button>
+                <button class="project-card" type="button" data-category="editorial" data-title="Daydream doodles" data-category-label="Editorial" data-image="image3.jpg" aria-label="View Daydream doodles, editorial">
+                    <span class="project-image-wrap"><img src="image3.jpg" alt="Placeholder character image on a bright green background" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></span>
+                    <span class="project-info"><span class="project-title">Daydream doodles</span><span class="project-category">Editorial</span></span>
+                </button>
+                <button class="project-card project-card-offset" type="button" data-category="runway" data-title="Moonbeam stroll" data-category-label="Runway" data-image="image1.jpg" aria-label="View Moonbeam stroll, runway">
+                    <span class="project-image-wrap"><img src="image1.jpg" alt="Placeholder character image on a bright green background" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></span>
+                    <span class="project-info"><span class="project-title">Moonbeam stroll</span><span class="project-category">Runway</span></span>
+                </button>
+                <button class="project-card project-card-tall" type="button" data-category="editorial" data-title="Midnight sparkle" data-category-label="Editorial" data-image="image2.jpg" aria-label="View Midnight sparkle, editorial">
+                    <span class="project-image-wrap"><img src="image2.jpg" alt="Placeholder character image on a bright green background" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></span>
+                    <span class="project-info"><span class="project-title">Midnight sparkle</span><span class="project-category">Editorial</span></span>
+                </button>
+                <button class="project-card" type="button" data-category="beauty" data-title="Little sunshine" data-category-label="Beauty" data-image="image3.jpg" aria-label="View Little sunshine, beauty">
+                    <span class="project-image-wrap"><img src="image3.jpg" alt="Placeholder character image on a bright green background" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></span>
+                    <span class="project-info"><span class="project-title">Little sunshine</span><span class="project-category">Beauty</span></span>
+                </button>
+                <button class="project-card project-card-offset" type="button" data-category="runway" data-title="Starry parade" data-category-label="Runway" data-image="image1.jpg" aria-label="View Starry parade, runway">
+                    <span class="project-image-wrap"><img src="image1.jpg" alt="Placeholder character image on a bright green background" loading="lazy"><span class="project-open" aria-hidden="true">↗</span></span>
+                    <span class="project-info"><span class="project-title">Starry parade</span><span class="project-category">Runway</span></span>
+                </button>
+            </div>
+            <p class="no-projects" hidden>No projects in this category just yet.</p>
+        </section>
+
+        <section class="about section-wrap" id="about" aria-labelledby="about-title">
+            <div class="about-image-wrap">
+                <img src="image3.jpg" alt="Placeholder portrait of a little character on a bright green background" loading="lazy">
+                <span class="about-image-note">soft vibes only ♡</span>
+            </div>
+            <div class="about-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> a lil' intro ♡</p>
+                <h2 id="about-title">Hi, I'm Camilo!<br><em>Let's play dress-up.</em></h2>
+                <p>I'm a makeup artist who believes getting ready should feel like playing. I love happy colors, tiny details, and helping you feel like the main character in your own story.</p>
+                <p>Think of me as your friend with the extra glitter ✨</p>
+                <a class="text-link" href="#contact">Say hi! <span aria-hidden="true">♡</span></a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> my inbox is a happy place</p>
+            <h2 id="contact-title">Let's make <em>magic!</em></h2>
+            <p>Got a fun idea? Have a question? I'd love to hear from you ♡</p>
+            <a class="contact-button" href="mailto:hello@camiloherrera.com">Send me a little note <span aria-hidden="true">♡</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="wordmark footer-wordmark" href="#top" aria-label="Camilo Herrera, back to top">CAMILO <span>HERRERA</span><i>✿ MADE WITH LOVE ✿</i></a>
+        <p>© <span id="current-year"></span> Camilo Herrera. Stay cozy ♡</p>
+        <a class="footer-top" href="#top">Back to the top ↑</a>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Selected portfolio project">
+        <button class="lightbox-close" type="button" aria-label="Close project view">×</button>
+        <img class="lightbox-image" src="image2.jpg" alt="Selected portfolio project">
+        <div class="lightbox-caption"><span class="lightbox-title"></span><span class="lightbox-category"></span></div>
+    </dialog>
+</body>
+</html>
